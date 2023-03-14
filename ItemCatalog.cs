@@ -2,20 +2,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class FoodCatalog : SingletonAsset<FoodCatalog>
+public class ItemCatalog : SingletonAsset<FoodCatalog>
     {
         /// <summary>
         /// Class for call scriptable object which inside catalog
         /// </summary>
         [Serializable]
-        public class Food
+        public class Item
         {
             public string id;
             public Sprite icon;
             public float price;
             public PurchaseType type;
             [TextArea]
-            public string foodDesc;
+            public string itemDesc;
         }
 
         public enum PurchaseType
@@ -25,7 +25,7 @@ public class FoodCatalog : SingletonAsset<FoodCatalog>
             Jewel
         }
 
-        public List<Food> foods;
+        public List<Item> items;
 
         /// <summary>
         /// Auto create catalog in editor
