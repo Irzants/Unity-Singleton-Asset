@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RichGagak.Meowtyp
-{
     public enum UILayer
     {
         Common = 0,
@@ -26,4 +24,4 @@ namespace RichGagak.Meowtyp
             ms(this);
         }
     }
-}
+
